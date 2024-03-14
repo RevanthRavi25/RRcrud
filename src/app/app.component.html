@@ -1,3 +1,20 @@
 
-
+<table>
+  <thead>
+    <tr>
+      <th>Student Id</th>
+      <th>Name</th>
+      <th>Roll No</th>
+      <th>DOB</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let stu_details of student">
+      <td style="text-align:center">{{stu_details.StudentId}}</td>
+      <td>{{stu_details.Name}}</td>
+      <td>{{stu_details.Roll}}</td>
+      <td>{{stu_details.Birthday}}</td>
+    </tr>
+  </tbody>
+</table>
 <router-outlet></router-outlet>
